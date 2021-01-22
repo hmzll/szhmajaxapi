@@ -668,29 +668,56 @@ xhr.send('username=xxx')
 
 ```
 
-## 图灵机器人
+## 聊天机器人聊天
 
-> 智能机器人接口，使用需要注册，官网地址是 [http://www.turingapi.com/](http://www.turingapi.com/)
-
-- 请求地址：http://www.tuling123.com/openapi/api
+- 请求地址：http://www.liulongbin.top:3006/api/robot
 - 请求方法：post
-- 请求参数：key,info
+- 请求参数：spoken
 
 | 参数名 | 参数说明           | 备注     |
 | :----- | :----------------- | :------- |
-| key    | 申请的机器人 key   | 不能为空 |
-| info   | 要跟机器人聊的内容 |          |
+| spoken   | 要跟机器人聊的内容 |          |
 
 - 响应内容：聊天的信息
 
 ```json
-{ "code": 100000, "text": "你好吗" }
+{
+  "data": {
+    "type": 5000,
+    "info": {
+      "text": "*^_^*好好好~"
+    }
+  },
+  "message": "success"
+}
 ```
 
-测试用 key：如果次数都用完了建议自己注册一个机器人即可，免费的
+|data|	object|	服务器返回的消息对象|
+|+ type|	int	|获取聊天消息是否成功的状态码，5000 表示成功|
+|+ info	|object	|聊天消息对象|
+|++ text|	string	|机器人返回的聊天内容|
+|message|	string	|请求结果的描述消息|
 
-- 2162602fd87240a8b7bba7431ffd379b
-- a618e456f0744066840ceafb6a249d9d
-- d7c82ebd8b304abeacc73b366e42b9ed
-- 7b1cf467c0394dd5b3e49f32663f8b29
-- 9fbb98effab142c9bb324f804be542ba
+## 聊天机器人文字转语音
+
+- 请求地址：http://www.liulongbin.top:3006/api/synthesize
+- 请求方法：get
+- 请求参数：key,info
+
+| 参数名 | 参数说明           | 备注     |
+| :----- | :----------------- | :------- |
+| text   | 要转语音的文字 |          |
+
+- 响应内容：语音的url
+```json
+{
+  "status": 200,
+  "message": "success",
+  "voiceUrl": "https://dds.dui.ai/runtime/v1/synthesize?voiceId=qianranfa&speed=0.8&volume=100&audioType=wav&text=%E4%BD%A0%E5%A5%BD"
+}
+```
+
+| 参数名| 	类型	| 说明| 
+| status| 	   int| 	请求是否成功，200：成功，否则失败| 
+| message	|   string	| 请求结果的描述消息| 
+| voiceUrl| 	string| 	语音消息的URL地址，可通过 <audio> 标签进行播放| 
