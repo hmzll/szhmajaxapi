@@ -672,7 +672,7 @@ xhr.send('username=xxx')
 ## 聊天机器人聊天
 
 - 请求地址：http://www.liulongbin.top:3006/api/robot
-- 请求方法：post
+- 请求方法：get
 - 请求参数：spoken
 
 | 参数名 | 参数说明           | 备注 |
@@ -732,7 +732,7 @@ xhr.send('username=xxx')
 
 ## 新闻列表
 
-+ 接口URL：  /api/news
++ 接口URL：  http://www.liulongbin.top:3006/api/news
 + 调用方式： GET
 + 参数格式：无
 + 响应格式：
