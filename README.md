@@ -65,7 +65,7 @@
 
 > 随机获取笑话的接口
 
-- 请求地址：https://autumnfish.cn/api/joke
+- 请求地址：http://ajax.zllhyy.cn/joke
 - 请求方法：get
 - 请求参数：无
 - 响应内容：随机笑话
@@ -74,7 +74,7 @@
 
 > 随机获取笑话的接口
 
-- 请求地址：https://autumnfish.cn/api/joke/list
+- 请求地址：http://ajax.zllhyy.cn/joke/list
 - 请求方法：get
 - 请求参数：num
 
@@ -107,7 +107,7 @@
 
 > 验证用户名是否可用
 
-- 请求地址：https://autumnfish.cn/api/user/check
+- 请求地址：http://ajax.zllhyy.cn/user/check
 - 请求方法：post
 - 请求参数：username
 
@@ -125,7 +125,7 @@ xhr.send('username=xxx')
 
 > 注册用户
 
-- 请求地址：https://autumnfish.cn/api/user/register
+- 请求地址：http://ajax.zllhyy.cn/user/register
 - 请求方法：post
 - 请求参数：username
 
@@ -143,7 +143,7 @@ xhr.send('username=xxx')
 
 > 注册用户,可以用来测试axios
 
-- 请求地址：https://autumnfish.cn/api/user/reg
+- 请求地址：http://ajax.zllhyy.cn/user/reg
 - 请求方法：post
 - 请求参数：username
 
@@ -159,8 +159,8 @@ xhr.send('username=xxx')
 
 > 根据英雄 姓名 查询英雄的 外号
 
-- 请求地址：https://autumnfish.cn/api/hero/simple
-  - 示例：https://autumnfish.cn/api/hero/simple?name=提莫
+- 请求地址：http://ajax.zllhyy.cn/hero/simple
+  - 示例：http://ajax.zllhyy.cn/hero/simple?name=提莫
 - 请求方法：get
 - 请求参数：name
 
@@ -174,8 +174,8 @@ xhr.send('username=xxx')
 
 > 根据英雄 姓名 查询英雄的简略信息
 
-- 请求地址：https://autumnfish.cn/api/hero/info
-  - 示例：https://autumnfish.cn/api/hero/info?name=提莫
+- 请求地址：http://ajax.zllhyy.cn/hero/info
+  - 示例：http://ajax.zllhyy.cn/hero/info?name=提莫
 - 请求方法：get
 - 请求参数：name
 
@@ -199,8 +199,8 @@ xhr.send('username=xxx')
 
 > 根据英雄 姓名 查询英雄的 详细信息
 
-- 请求地址：https://autumnfish.cn/api/hero/detail
-  - 示例：https://autumnfish.cn/api/hero/detail?name=提莫
+- 请求地址：http://ajax.zllhyy.cn/hero/detail
+  - 示例：http://ajax.zllhyy.cn/hero/detail?name=提莫
 - 请求方法：get
 - 请求参数：name
 
@@ -253,7 +253,7 @@ xhr.send('username=xxx')
 
 > 查询英雄的 详细信息
 
-- 请求地址：https://autumnfish.cn/api/cq
+- 请求地址：http://ajax.zllhyy.cn/cq
 - 请求方法：get
 - 请求参数：query
 
@@ -305,7 +305,7 @@ xhr.send('username=xxx')
 
 > 查询英雄的 详细信息
 
-- 请求地址：https://autumnfish.cn/api/cq/page
+- 请求地址：http://ajax.zllhyy.cn/cq/page
 - 请求方法：get
 - 请求参数：query,pageNum,pageSize
 
@@ -335,7 +335,7 @@ xhr.send('username=xxx')
 
 > 查询英雄的 详细信息
 
-- 请求地址：https://autumnfish.cn/api/cq/category
+- 请求地址：http://ajax.zllhyy.cn/cq/category
 - 请求方法：get
 - 请求参数：type
 
@@ -369,7 +369,7 @@ xhr.send('username=xxx')
 
 > 查询英雄的 详细信息
 
-- 请求地址：https://autumnfish.cn/api/cq/gif
+- 请求地址：http://ajax.zllhyy.cn/cq/gif
 - 请求方法：get
 - 请求参数：name
 
@@ -395,7 +395,7 @@ xhr.send('username=xxx')
 
 > 查询英雄的 详细信息
 
-- 请求地址：https://autumnfish.cn/api/cq/add
+- 请求地址：http://ajax.zllhyy.cn/cq/add
 - 请求方法：post
 - 请求参数：heroName,heroSkill,skillName
 
@@ -412,7 +412,7 @@ xhr.send('username=xxx')
     "msg": "新增成功",
     "code": 201,
     "info": {
-        "heroIcon": "https://autumnfish.cn/api/cq/static/5f89c6f2c695d7126d2768bda47fd7e9",
+        "heroIcon": "http://ajax.zllhyy.cn/cq/static/5f89c6f2c695d7126d2768bda47fd7e9",
         "heroName": "超级舞王",
         "skillName": "跳舞"
     }
@@ -424,7 +424,7 @@ xhr.send('username=xxx')
 
 > 查询lol英雄列表
 
-- 请求地址：https://autumnfish.cn/api/lol/search
+- 请求地址：http://ajax.zllhyy.cn/lol/search
 - 请求方法：get
 - 请求参数：q
 
@@ -471,7 +471,7 @@ xhr.send('username=xxx')
 
 > 查询lol英雄详情
 
-- 请求地址：https://autumnfish.cn/api/lol/info
+- 请求地址：http://ajax.zllhyy.cn/lol/info
 - 请求方法：get
 - 请求参数：id
 
@@ -500,7 +500,7 @@ xhr.send('username=xxx')
 
 返回所有忍者数据
 
-* 请求地址:https://autumnfish.cn/api/ninja/search
+* 请求地址:http://ajax.zllhyy.cn/ninja/search
 * 请求方法：get
 * 请求参数：无
 
@@ -532,7 +532,7 @@ xhr.send('username=xxx')
 
 返回随机的lol英雄皮肤
 
-* 请求地址:https://autumnfish.cn/api/cover/random
+* 请求地址:http://ajax.zllhyy.cn/cover/random
 * 请求方法：get
 * 请求参数：无
 
@@ -623,7 +623,7 @@ xhr.send('username=xxx')
 
 ## 获取 xml 格式菜单
 
-- 请求地址：https://autumnfish.cn/api/food.xml
+- 请求地址：http://ajax.zllhyy.cn/food.xml
 
 - 请求方法：get
 - 请求参数：无
